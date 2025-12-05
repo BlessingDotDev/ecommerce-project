@@ -12,11 +12,11 @@ export function HomePage() {
       
       <Header />
 
-      <div className="home-page">
+      <div className="home-page">  
         <div className="products-grid">
           {products.map((product) => {
             return (
-              <div className="product-container">
+              <div key={product.id} className="product-container">
                 <div className="product-image-container">
                   <img className="product-image"
                     src={product.image} />
