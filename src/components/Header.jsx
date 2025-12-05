@@ -12,7 +12,7 @@ export function Header({ cart }) {
     totalQuantity += cartItem.quantity;
   })
 
-  
+
   return (
     <div className="header">
       <div className="left-section">
