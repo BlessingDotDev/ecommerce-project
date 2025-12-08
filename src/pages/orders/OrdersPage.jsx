@@ -2,7 +2,6 @@ import axios from 'axios';
 import { useEffect, useState} from 'react';
 import { Header } from '../../components/Header.jsx';
 import { OrdersGrid } from './OrdersGrid.jsx';
-
 import './OrdersPage.css';
 
 export function OrdersPage({ cart }) {

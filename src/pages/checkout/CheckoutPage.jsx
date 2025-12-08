@@ -27,8 +27,8 @@ export function CheckoutPage({ cart }) {
 
       <title>Checkout</title>
 
-      <CheckoutHeader />
-
+      <CheckoutHeader cart={cart} />
+0
       <div className="checkout-page">
         <div className="page-title">Review your order</div>
 
