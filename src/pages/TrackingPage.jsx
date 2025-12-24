@@ -26,6 +26,8 @@ export function TrackingPage({ cart }) {
     return orderProduct.productId === productId;
   });
 
+  console.log(orderProduct);
+
   return (
     <>
       <link rel="icon" type="image/svg+xml" href="tracking-favicon.png" />
@@ -49,10 +51,10 @@ export function TrackingPage({ cart }) {
           </div>
 
           <div className="product-info">
-            Quantity: 1
+            Quantity: {orderProduct.quantity}
           </div>
 
-          <img className="product-image" src="images/products/athletic-cotton-socks-6-pairs.jpg" />
+          <img className="product-image" src={orderProduct.product.image} />
 
           <div className="progress-labels-container">
             <div className="progress-label">
